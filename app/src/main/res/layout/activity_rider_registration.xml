@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background= "@drawable/riderback"
+    tools:context=".LOGIN.Login">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/teal_700"
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        app:boxCornerRadiusBottomStart="@dimen/cardview_compat_inset_shadow"
+        app:boxBackgroundMode="filled"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        app:startIconDrawable="@drawable/person"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRiderFullname"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Date of Birth"-->
+<!--        app:boxCornerRadiusBottomStart="@dimen/cardview_compat_inset_shadow"-->
+<!--        app:boxBackgroundMode="filled"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        app:startIconDrawable="@drawable/date"-->
+<!--        >-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/etDateOfBirth1"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="number"-->
+
+<!--            />-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        app:boxCornerRadiusBottomStart="@dimen/cardview_compat_inset_shadow"
+        app:boxBackgroundMode="filled"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        app:startIconDrawable="@drawable/phone"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRiderPhonenumber"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        app:boxCornerRadiusBottomStart="@dimen/cardview_compat_inset_shadow"
+        app:boxBackgroundMode="filled"
+        android:gravity="center"
+        app:passwordToggleEnabled= "true"
+        android:layout_marginBottom="10dp"
+        app:startIconDrawable="@drawable/password"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRiderPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+
+            android:inputType="textPassword"
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSignup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/button"
+        android:layout_marginBottom="10dp"
+        android:text="Register"/>
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Already have account?"-->
+
+<!--        android:textColor="@color/teal_700"-->
+<!--        android:layout_marginBottom="20dp"-->
+
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+
+<!--        />-->
+
+</LinearLayout>

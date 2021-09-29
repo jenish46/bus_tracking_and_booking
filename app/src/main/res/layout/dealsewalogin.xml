@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#283593">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DealSewa-Pay"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"/>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/login"
+                    android:scaleType="fitCenter"
+                    />
+
+            </LinearLayout>
+
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/username"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="48dp"-->
+            <!--            android:layout_marginBottom="10dp"-->
+            <!--            android:drawablePadding="10dp"-->
+            <!--            android:drawableStart="@drawable/person"-->
+            <!--            android:ems="10"-->
+            <!--            android:hint="Username"-->
+            <!--            android:inputType="textPersonName"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textColor="@color/black"-->
+            <!--            android:textColorHint="@color/black"-->
+            <!--            android:textSize="21sp" />-->
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/password"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="21sp" />
+
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="30dp"
+                android:text="Proceed"
+                android:backgroundTint="@color/black"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bb"
+                android:orientation="horizontal">
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/bio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FFFFFF"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tap to proceed with Fingerprint"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

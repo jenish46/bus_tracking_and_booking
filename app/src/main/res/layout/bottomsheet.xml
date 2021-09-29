@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <!--image view for displaying course image-->
+        <ImageView
+            android:id="@+id/idPlace"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+             />
+
+        <!--text view for displaying course name-->
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+            android:layout_toEndOf="@id/idPlace"
+            android:layout_toRightOf="@id/idPlace"
+            android:text="Softwarica Collage of IT - Ecommerce"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--text view for displaying course tracks-->
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/place"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idPlace"
+            android:layout_toRightOf="@id/idPlace"
+            android:text="Price :Rs 30"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!--text view for displaying course duration-->
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/idPlace"
+            android:layout_toRightOf="@id/idPlace"
+            android:text="Course Duration : 4 Months"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <!--button for dismissing our dialog-->
+        <Button
+            android:id="@+id/idRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginBottom="10dp"
+            android:text="Request"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
